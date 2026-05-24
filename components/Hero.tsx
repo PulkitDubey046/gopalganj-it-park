@@ -1,7 +1,16 @@
+"use client"
+
 export default function Hero() {
+  const handleScrollToForm = () => {
+    // Looks for the form section and scrolls down smoothly
+    const formElement = document.getElementById("admission-form")
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="bg-blue-700 text-white py-24 px-6">
-
       <div className="max-w-7xl mx-auto text-center">
 
         <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
@@ -16,18 +25,25 @@ export default function Hero() {
 
         <div className="flex flex-col md:flex-row gap-4 justify-center">
 
-          <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-xl font-semibold">
+          {/* Connected Action: Scroll down to registration panel */}
+          <button 
+            onClick={handleScrollToForm}
+            className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-xl font-semibold shadow-md"
+          >
             Apply Online
           </button>
 
-          <button className="bg-white text-blue-700 hover:bg-gray-100 transition px-8 py-4 rounded-xl font-semibold">
+          {/* Connected Action: Trigger native mobile phone calls */}
+          <a 
+            href="tel:+919661520001" 
+            className="bg-white text-blue-700 hover:bg-gray-100 transition px-8 py-4 rounded-xl font-semibold text-center shadow-md"
+          >
             Call Now
-          </button>
+          </a>
 
         </div>
 
       </div>
-
     </section>
   )
 }
