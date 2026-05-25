@@ -1,6 +1,12 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
+export const metadata = {
+  title: "About Us",
+  description: "Learn about the legacy of Gopalganj IT Park, established in 2004, providing trusted computer literacy classes for 22+ years.",
+  alternates: { canonical: "https://www.gopalganjitpark.com/about" }
+};
+
 export default function AboutPage() {
   return (
     <>

@@ -1,6 +1,12 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
+export const metadata = {
+      title: "Contact Us & Campus Location",
+      description: "Visit our campus at Yadavpur Road, Gopalganj, Bihar or contact us directly at +91 9661520001 for admission inquiries.",
+      alternates: { canonical: "https://www.gopalganjitpark.com/contact" }
+    };
+
 export default function ContactPage() {
   return (
     <>

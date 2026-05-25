@@ -2,6 +2,12 @@ import Link from "next/link"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
+export const metadata = {
+  title: "Computer Courses Offered",
+  description: "Explore our expert IT syllabus pathways including NIELIT O Level, CCC, and KYP training certifications.",
+  alternates: { canonical: "https://www.gopalganjitpark.com/courses" }
+};
+
 // Using the same course database configuration matching your main page registry
 const courses = [
   {
