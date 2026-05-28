@@ -20,7 +20,7 @@ const courses = [
   {
     title: "KYP",
     slug: "kyp",
-    duration: "6 Months",
+    duration: "3 Months",
     description:
       "Skill development program for communication and digital training.",
   },

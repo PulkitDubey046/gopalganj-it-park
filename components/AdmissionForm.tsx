@@ -1,19 +1,15 @@
 export default function AdmissionForm() {
   return (
-    <section className="py-20 px-6 bg-white">
-
+    <section id="admission-form" className="py-20 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
 
         <div className="text-center mb-12">
-
           <h2 className="text-4xl font-bold mb-4">
             Online Admission
           </h2>
-
           <p className="text-gray-600">
             Fill out the form to enroll in your preferred course
           </p>
-
         </div>
 
         <form className="space-y-6 bg-gray-100 p-8 rounded-2xl shadow-md">
@@ -22,7 +18,6 @@ export default function AdmissionForm() {
             <label className="block mb-2 font-medium">
               Full Name
             </label>
-
             <input
               type="text"
               placeholder="Enter your name"
@@ -34,7 +29,6 @@ export default function AdmissionForm() {
             <label className="block mb-2 font-medium">
               Mobile Number
             </label>
-
             <input
               type="text"
               placeholder="Enter mobile number"
@@ -46,17 +40,14 @@ export default function AdmissionForm() {
             <label className="block mb-2 font-medium">
               Select Course
             </label>
-
             <select
+              id="course-select"
               className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option>CCC</option>
-
-              <option>O Level</option>
-
-              <option>KYP</option>
-
-              <option>Basic Computer</option>
+              <option value="CCC">CCC</option>
+              <option value="O Level">O Level</option>
+              <option value="KYP">KYP</option>
+              <option value="Basic Computer">Basic Computer</option>
             </select>
           </div>
 
@@ -64,7 +55,6 @@ export default function AdmissionForm() {
             <label className="block mb-2 font-medium">
               Address
             </label>
-
             <textarea
               placeholder="Enter your address"
               rows={4}
@@ -82,7 +72,6 @@ export default function AdmissionForm() {
         </form>
 
       </div>
-
     </section>
   )
 }
