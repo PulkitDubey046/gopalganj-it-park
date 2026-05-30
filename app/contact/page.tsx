@@ -49,7 +49,7 @@ export default function ContactPage() {
                     Call or WhatsApp
                   </h3>
                   <p className="text-lg font-semibold text-gray-800">
-                    +91 9876543210 , +91 9661520001 
+                    +91 9661520001 
                   </p>
                   <p className="text-gray-500 text-sm mt-1">
                     Mon - Sat: 8:00 AM to 6:00 PM
